@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Configure
-        run: cmake -B build -G "Visual Studio 17 2022" -A x64 -DSEDA_COPY_AFTER_BUILD=OFF
+        run: cmake -B build -A x64 -DSEDA_COPY_AFTER_BUILD=OFF
       - name: Build
         run: cmake --build build --config Release --target Seda_VST3 Seda_Standalone --parallel
       - name: Upload VST3
