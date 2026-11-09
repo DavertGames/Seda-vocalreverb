@@ -1,6 +1,6 @@
 # Seda — Vocal Reverb
 
-[![CI](https://github.com/YOUR_USER/seda-vocal-reverb/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USER/seda-vocal-reverb/actions/workflows/ci.yml)
+[![CI](https://github.com/DavertGames/Seda-vocalreverb/actions/workflows/ci.yml/badge.svg)](https://github.com/DavertGames/Seda-vocalreverb/actions/workflows/ci.yml)
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-blue)
 ![JUCE](https://img.shields.io/badge/JUCE-8-orange)
 ![Formats](https://img.shields.io/badge/formats-VST3%20%7C%20AU%20%7C%20Standalone-lightgrey)
