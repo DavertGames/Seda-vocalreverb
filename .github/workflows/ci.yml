@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  dsp-tests:
+    name: DSP measurements (RT60, echo density, stability)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: g++ -O2 -std=c++17 -Wall -Wextra Tests/dsp_test.cpp -o dsp_test
+      - name: Run
+        run: ./dsp_test
+
+  plugin-windows:
+    name: Build plugin (Windows, VST3 + Standalone)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -B build -G "Visual Studio 17 2022" -A x64 -DSEDA_COPY_AFTER_BUILD=OFF
+      - name: Build
+        run: cmake --build build --config Release --target Seda_VST3 Seda_Standalone --parallel
+      - name: Upload VST3
+        uses: actions/upload-artifact@v4
+        with:
+          name: Seda-Windows-VST3
+          path: build/Seda_artefacts/Release/VST3/
