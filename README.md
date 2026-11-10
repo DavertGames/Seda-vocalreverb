@@ -9,7 +9,7 @@ A stereo reverb plugin designed specifically for vocals: dense and smooth tail, 
 
 The DSP core is a **header-only, dependency-free C++17 library** (`Source/VocalReverbDSP.h`) wrapped in a JUCE plugin, with a standalone test harness that measures the reverb objectively.
 
-![Seda UI](docs/screenshot.png)
+
 
 > **Demo:** _add a link to your audio/video demo here_
 
