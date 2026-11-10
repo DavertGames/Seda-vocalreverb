@@ -1,5 +1,12 @@
 # Seda — Vocal Reverb
 
+## Download
+
+Get the latest Windows build from the [Releases page](https://github.com/DavertGames/Seda-vocalreverb/releases/latest).
+
+- **Standalone:** unzip and run `Seda Vocal Reverb.exe`
+- **VST3:** copy the `.vst3` folder to `C:\Program Files\Common Files\VST3`
+
 [![CI](https://github.com/DavertGames/Seda-vocalreverb/actions/workflows/ci.yml/badge.svg)](https://github.com/DavertGames/Seda-vocalreverb/actions/workflows/ci.yml)
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-blue)
 ![JUCE](https://img.shields.io/badge/JUCE-8-orange)
